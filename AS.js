@@ -16,7 +16,7 @@ const words = {
     movies: ["Prestige", "Inception", "Parasite", "Interstellar", "Whiplash", "Memento", "Coco", "Up"],
     people: ["Albert Einstein", "Asmaa", "Alexander", "Cleopatra", "Mahatma Ghandi", "Eslam"],
     countries: ["Syria", "Palestine", "Yemen", "Egypt", "Bahrain", "Qatar"],
-    Eslam:["Ahmed", "mohmed", "Gamal", "moslam"]
+    // Eslam:["Ahmed", "mohmed", "Gamal", "moslam"]
   }
   
   let Arr_word = Object.keys(words)
@@ -77,6 +77,7 @@ if (rwong == 9) {
 }
 if (right === ch_wor) {
     document.querySelector(".good").classList.add("v-good");
+    document.querySelector(".good").innerHTML = `the right word is ${Arr_R_wo}`
     document.querySelector(".hangman-draw").parentElement.remove();
 }
 
